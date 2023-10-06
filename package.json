@@ -8,9 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/illeiva2/portfolio.git"
+    "url": "git+https://github.com/illeiva2/portfolio.git"
   },
   "keywords": [],
   "author": "Ivan Luis Leiva, illeiva@outlook.com",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/illeiva2/portfolio/issues"
+  },
+  "homepage": "https://github.com/illeiva2/portfolio#readme"
 }
