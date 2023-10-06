@@ -12,8 +12,6 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon-32x32.png">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/index.js"></script>
-
 </head>
 
 <body>
@@ -186,8 +184,21 @@
             </li>
         </ul>
     </footer>
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelectorAll('.nav__link')
 
-    
+        navToggle.addEventListener('click', () => {
+            document.body.classList.toggle('nav-open');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.body.classList.remove('nav-open');
+            })
+        })
+    </script>
+
 </body>
 
 </html>
