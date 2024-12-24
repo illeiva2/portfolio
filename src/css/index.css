@@ -1,3 +1,5 @@
+/* General styles */
+
 *,
 *::before,
 *::after {
@@ -33,8 +35,6 @@
   }
 }
 
-/* General styles */
-
 html {
   scroll-behavior: smooth;
 }
@@ -66,8 +66,6 @@ strong {
   outline-offset: 3px;
 }
 
-/* Buttons */
-
 .btn {
   display: inline-block;
   padding: 0.5em 2.5em;
@@ -85,8 +83,6 @@ strong {
 .btn:hover {
   transform: scale(1.1);
 }
-
-/* Typography */
 
 h1,
 h2,
@@ -126,7 +122,7 @@ h3 {
 .section__subtitle--about {
   background: var(--clr-accent);
   padding: 0.25em 1em;
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   margin-bottom: 1em;
 }
 
@@ -135,8 +131,6 @@ h3 {
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
 }
-
-/* header */
 
 header {
   display: flex;
@@ -245,8 +239,6 @@ header {
   bottom: 6px;
 }
 
-/*  Intro section  */
-
 .intro {
   position: relative;
 }
@@ -289,13 +281,10 @@ header {
   }
 }
 
-/*  My services section  */
-
 .my-services {
   background-color: var(--clr-dark);
   background-image: url(../images/services-bg.jpg);
   background-size: cover;
-  /* background-blend-mode: multiply; */
   color: var(--clr-light);
   text-align: center;
 }
@@ -370,7 +359,6 @@ header {
     padding-left: 1em;
     padding-right: calc(200px + 4em);
   }
-
   .about-me__img {
     grid-area: img;
     position: relative;
@@ -384,11 +372,14 @@ header {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+  padding: 4em 0;
 }
 
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+  padding: 2em;
 }
 
 .portfolio__item {
@@ -409,9 +400,71 @@ header {
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: 0.5;
+  cursor: pointer;
 }
 
-/* footer */
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px; 
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #ff5a5f; 
+  transition: transform 0.2s, color 0.2s; 
+}
+
+.close-button:hover {
+  transform: scale(1.2); 
+  color: #ff0000; 
+}
+
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.modal-content h2 {
+  margin-bottom: 0.5em;
+  color: black;
+}
+
+.modal-content p {
+  margin-bottom: 1em;
+  color: black;
+}
+
+/* Footer */
 
 .footer {
   background: #111;
