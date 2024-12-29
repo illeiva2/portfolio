@@ -13,7 +13,7 @@ export const projects = [
   {
     title: "Proyecto 3",
     description: "Descripción del proyecto 3",
-    image: "images/portfolio-03.jpg",
+    image: "images/portfolio-05.png",
   },
   {
     title: "Proyecto 4",
