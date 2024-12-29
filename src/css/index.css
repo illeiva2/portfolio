@@ -282,16 +282,6 @@ header {
 }
 
 @media (min-width: 360px) {
-  .intro {
-    display: grid;
-    width: min-content;
-    margin: 0 auto;
-    grid-column-gap: 1em;
-    grid-template-areas:
-      "img title"
-      "img subtitle";
-    grid-template-columns: min-content max-content;
-  }
 
   .portfolio {
     display: grid;
