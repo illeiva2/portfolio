@@ -1,11 +1,15 @@
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations';
 export default function Intro() {
+  const { language } = useLanguage();
+  const t = translations[language].intro;
   return (
     <section className="intro" id="home">
       <h1 className="section__title section__title--intro">
-        Hi, I am <strong>Iván Leiva</strong>
+      {t.title} <strong>Iván Leiva</strong>
       </h1>
       <p className="section__subtitle section__subtitle--intro">
-        full-stack dev
+      {t.subtitle}
       </p>
       <img
         src="../images/portada.png"

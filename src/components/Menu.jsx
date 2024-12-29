@@ -1,12 +1,16 @@
+import LanguageSwitch from "./LanguageSwitch";
 export default function Menu() {
   return (
     <>
       <div className="logo">
         <img src="../images/image.png" alt="" />
       </div>
-      <button className="nav-toggle" aria-label="toggle navigation">
-        <span className="hamburger" />
-      </button>
+      <div className="header-controls">
+        <LanguageSwitch />
+        <button className="nav-toggle" aria-label="toggle navigation">
+          <span className="hamburger" />
+        </button>
+      </div>
       <nav className="nav">
         <ul className="nav__list">
           <li className="nav__item">

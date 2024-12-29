@@ -5,19 +5,24 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Intro from "./components/Intro";
 import MenuE from "./components/MenuE";
+import { LanguageProvider } from './context/LanguageContext';
 
-export default function App() {
+function App() {
   return (
-    <main>
-      <MenuE />
-      <header>
-        <Menu />
-      </header>
-      <Intro />
-      <Skills />
-      <About />
-      <Projects />
-      <Contact />
-    </main>
+    <LanguageProvider>
+      <main>
+        <MenuE />
+        <header>
+          <Menu />
+        </header>
+        <Intro />
+        <Skills />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+    </LanguageProvider>
   );
 }
+
+export default App;

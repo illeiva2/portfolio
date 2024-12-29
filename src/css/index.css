@@ -183,9 +183,9 @@ header {
   background: transparent;
   border: 0;
   cursor: pointer;
-  position: absolute;
-  right: 1em;
-  top: 1em;
+  position: relative; /* Remove absolute positioning */
+  /* right: 0.25em;
+  top: 0.05em; */
   z-index: 1000;
 }
 
@@ -506,4 +506,34 @@ header {
 
 .social-list__link {
   padding: 0.5em;
+}
+
+/* Modify existing styles */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+/* Update language switch styles */
+.language-switch {
+  position: static; /* Remove fixed positioning */
+  padding: 0.5em 1em;
+  background: var(--clr-dark);
+  color: var(--clr-accent);
+  border: 2px solid var(--clr-accent);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
+  transition: all 200ms ease-in-out;
+}
+
+.language-switch:hover {
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  opacity: 1;
 }
