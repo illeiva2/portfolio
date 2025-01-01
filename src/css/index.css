@@ -691,3 +691,120 @@ header {
 .project-info p {
   color: var(--clr-light);
 }
+
+.image-gallery {
+  position: relative;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1em 0.5em;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.gallery-nav.prev {
+  left: 0;
+}
+
+.gallery-nav.next {
+  right: 0;
+}
+
+.gallery-nav:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-link {
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image-link:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay i {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  animation: pulse 2s infinite;
+}
+
+.image-overlay span {
+  font-size: 1.2em;
+  background: var(--clr-accent);
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.image-link:hover .image-overlay span {
+  transform: translateY(0);
+}
+
+.image-container::after {
+  content: "Click para visitar →";
+  position: absolute;
+  bottom: 48%;
+  right: 38%;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  font-size: 0.8em;
+  opacity: 0.8;
+  animation: hide 2s infinite;
+}
+
+.image-container:hover::after {
+  animation: none;
+  opacity: 0;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes hide {
+  0% { opacity: 1; }
+  50% { scale: 1.1; }
+  100% { opacity: 0; }
+}

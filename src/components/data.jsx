@@ -52,7 +52,13 @@ export const projects = [
   // Añade títulos y descripciones para los demás proyectos
   {
     "title": "Laura Beuchel Vestidos",
+    "images": [
+      "/images/Home.png",
+      "/images/Mensajes.png",
+      "/images/Vestidos.png"
+    ],
     "image": "/images/portfolio-05.png",
+    "url": "https://www.lbvestidos.com.ar/",
     "client": "Laura Beuchel",
     "description": "Este proyecto se centró en la creación de un sitio web para Laura Beuchel, una talentosa diseñadora y creadora de vestidos para 15 años, eventos y casamientos.",
     "focus": "Inclusión y elegancia clásica",
