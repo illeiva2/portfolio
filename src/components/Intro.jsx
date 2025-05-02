@@ -6,7 +6,7 @@ export default function Intro() {
   return (
     <section className="intro" id="home">
       <h1 className="section__title section__title--intro">
-      {t.title} <strong>Iván Leiva</strong>
+      {t.title} <strong>Iván Luis Leiva</strong>
       </h1>
       <p className="section__subtitle section__subtitle--intro">
       {t.subtitle}
