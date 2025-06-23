@@ -75,4 +75,37 @@ export const projects = [
     ],
     "result": "El sitio web creado no solo sirve como un escaparate virtual de las creaciones de Laura Beuchel, sino que también refuerza su marca personal y su compromiso con la moda inclusiva y elegante."
   },
+  {
+  "title": "Gestión Club Deportivo",
+  "images": [
+    "/images/club-home.png",
+    "/images/club-cobros.png",
+    "/images/club-vencimientos.png"
+  ],
+  "image": "/images/portfolio-club.png",
+  "url": "",
+  "client": "Club Deportivo Local",
+  "description": "Este proyecto consistió en el desarrollo de una aplicación de escritorio y móvil para la gestión integral de un club deportivo, con foco en la administración de socios, cobros de cuotas y créditos, vencimientos y más.",
+  "focus": "Agilidad operativa y mejora en el control de pagos",
+  "platform": "Android Studio, SQLite, Kotlin",
+  "keyComponents": [
+    {
+      "title": "Gestión de Cobros",
+      "description": "Registro de pagos mensuales, historial de cuotas y actualización automática del estado de socio."
+    },
+    {
+      "title": "Control de Créditos",
+      "description": "Sistema para recarga y consumo de créditos en actividades deportivas."
+    },
+    {
+      "title": "Vencimientos y Deudas",
+      "description": "Consulta dinámica de clientes con cuotas vencidas, organizada por fecha."
+    },
+    {
+      "title": "UI Personalizada",
+      "description": "Diseño visual adaptado con curvas, íconos y menú lateral personalizado según las necesidades del club."
+    }
+  ],
+  "result": "El sistema facilitó significativamente la administración interna del club, mejoró la precisión en el seguimiento de pagos y ofreció una experiencia más clara y visual tanto para operadores como para socios."
+}
 ];
